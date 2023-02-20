@@ -1,0 +1,45 @@
+:root{
+--primary-color: #0084FD;
+--light-blue: #B5DDFF;
+--violet: #9792E4;
+--footer-color: #333333;
+}
+/* RESET */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+body{
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* HEADER */
+.header{
+    height: 60px;
+    line-height: 60px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    color: white;
+}
+.header .nav-bar{
+    display: none;
+}
+
+@media screen and (min-width: 992px) {
+    .hamburger{
+        display: none;
+    }
+    .header .nav-bar{
+        display: inline-block;
+    }
+    .header ul{
+        display: flex;
+        gap: 10px;
+        list-style-type: none;
+    }
+}
