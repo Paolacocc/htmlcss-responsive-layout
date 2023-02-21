@@ -17,7 +17,15 @@ img{
 body{
     font-family: 'PT Sans', sans-serif;
 }
-
+h3{
+    color: var(--primary-color);
+}
+.card {
+    padding: 20px;
+}
+button{
+    border-style: none;
+}
 /* HEADER */
 .header{
    
@@ -32,7 +40,9 @@ body{
 .header .nav-bar{
     display: none;
 }
-
+.logo img{
+    vertical-align: middle;
+}
 @media screen and (min-width: 992px) {
     .hamburger{
         display: none;
@@ -49,43 +59,82 @@ body{
 
 /* JUMBOTRON */
 .jumbo{
+    
     padding: 20px;
+    text-align: center;
 }
 .card{
+    
     background-color: var(--light-blue);
     margin-bottom: 20px;
     border-radius: 10px;
-    /* debug */
-    height: 200px;
+}
+.big-col{
+    text-align: left;
+}
+.big-col .card{
+    padding-bottom: 0;
+}
+.big-col p{
+    text-align: left;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.big-col-btn{
+    text-align: left;
+    background-color: #0084FD;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+.big-col-btn a {
+    text-decoration: none;
+    color: white;
 
 }
+.big-col-btn i{
+    
+    padding-right: 10px
+}
+.big-col-img{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
 
 @media screen and (min-width: 768px){
-    .row1{
+    .row{
         display: flex;
-        gap: 10px;
+        flex-wrap: wrap;
         
     }
-    .row2 {
-        display: flex;
-        gap: 10px;
-    }
-    .row1 .col{
-        flex-grow: 1;
-        /* debug */
-        /* height: 200px; */
-    }
+    
     .col{
-        flex-grow: 1;
-        width: calc((100% / 3) - 20px);
-        /* debug */
-        /* height: 200px; */
+        width: calc(100% / 3 );
+        height: 100%;
+        padding-right: 10px;
+     
+    }
+    .big-col-btn{
+        display: ;
     }
     .big-col{
-         
-         flex-grow: 2;
-        /* debug */
-        /* height: 200px; */
+        
+         width: calc(100% / 3 * 2);
+         padding-right: 10px;
+       
+    }
+    .big-card{
+        display: flex;
+        flex-direction: column;
+    }
+    .big-col-img{
+        display: inline;
+        margin: 0;
+        align-self: flex-start;
+        width: 40%;
     }
 }
 
@@ -94,6 +143,7 @@ body{
         width: 70%;
         margin: 0 auto;
     }
+     
 }
 
 
