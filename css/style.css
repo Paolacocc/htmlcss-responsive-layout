@@ -17,12 +17,15 @@ img{
 body{
     font-family: 'PT Sans', sans-serif;
 }
+h2{
+    padding: 20px 0;
+}
 h3{
     color: var(--primary-color);
     padding: 10px;
 }
 p{
-    padding: 10px;
+    padding: 20px 0;
     line-height: 1.8rem;
 }
 .card {
@@ -71,13 +74,13 @@ button{
     
     .header-button{
         background-color: white;
-        padding: 10px;
+        padding: 8px 10px;
         border-radius: 20px;
-        color: var(--primary-color);
+       
        
     }
     .header-button a{
-        color: #0084FD;
+        color: black;
     }
 }
 
@@ -186,14 +189,55 @@ button{
 
 /* PLANS */
 .plans{
+    color: white;
     padding: 20px;
     background-color: #9792E4;
+    padding-bottom: 5rem;
 }
+
 .app{
-    border-radius: 10px;
+    color: black;
+    text-align: center;
+    border-radius: 40px;
     background-color: white;
-    /* debug */
-    height: 150px;
+    padding: 20px;
+    
+}
+.plans-img{
+    padding: 20px;
+}
+.plans-btn{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    background-color: var(--violet);
+    border-radius: 50%;
+
+}
+
+
+@media screen and (min-width: 992px) {
+    .plans-row{
+        display: flex;
+    }
+    .app{
+        
+        width: 40%;
+        align-self: flex-end;
+        padding: 20px;
+    }
+    .strategic{
+        width: 60%;
+        padding: 40px;
+    }
+    .container-plans{
+        width: 60%;
+        margin:  0 auto;
+    }
+    .app .plans-img{
+        max-width: 280px;
+        
+    }
 }
 
 /* TESTIMONIAL */
