@@ -19,6 +19,11 @@ body{
 }
 h3{
     color: var(--primary-color);
+    padding: 10px;
+}
+p{
+    padding: 10px;
+    line-height: 1.8rem;
 }
 .card {
     padding: 20px;
@@ -41,6 +46,7 @@ button{
     display: none;
 }
 .logo img{
+    padding: 10px;
     vertical-align: middle;
 }
 @media screen and (min-width: 992px) {
@@ -49,11 +55,29 @@ button{
     }
     .header .nav-bar{
         display: inline-block;
+        
     }
     .header ul{
         display: flex;
-        gap: 10px;
+        gap: 15px;
         list-style-type: none;
+        
+    }
+    .header a{
+        text-decoration: none;
+        color: white;
+        
+    }
+    
+    .header-button{
+        background-color: white;
+        padding: 10px;
+        border-radius: 20px;
+        color: var(--primary-color);
+       
+    }
+    .header-button a{
+        color: #0084FD;
     }
 }
 
@@ -64,13 +88,15 @@ button{
     text-align: center;
 }
 .card{
-    
+    height: 100%;
     background-color: var(--light-blue);
-    margin-bottom: 20px;
     border-radius: 10px;
 }
 .big-col{
     text-align: left;
+}
+.col{
+    padding: 10px;
 }
 .big-col .card{
     padding-bottom: 0;
@@ -102,7 +128,10 @@ button{
     margin: 0 auto;
     padding-top: 20px;
 }
-
+.card-obj{
+    font-size: 5rem;
+    color: var(--primary-color);
+}
 
 @media screen and (min-width: 768px){
     .row{
@@ -113,13 +142,11 @@ button{
     
     .col{
         width: calc(100% / 3 );
-        height: 100%;
+        
         padding-right: 10px;
      
     }
-    .big-col-btn{
-        display: ;
-    }
+   
     .big-col{
         
          width: calc(100% / 3 * 2);
@@ -142,6 +169,15 @@ button{
     .container{
         width: 70%;
         margin: 0 auto;
+    }
+    .big-card{
+        flex-direction: row;
+    }
+    .big-col-img{
+        display: inline;
+        margin: 0;
+        align-self: flex-start;
+        width: 60%;
     }
      
 }
