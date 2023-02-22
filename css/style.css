@@ -182,8 +182,8 @@ button{
     .big-col-img{
         display: inline;
         margin: 0;
-        align-self: flex-start;
-        width: 60%;
+        align-self: flex-end;
+        width: 50%;
     }
      
 }
