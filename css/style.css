@@ -90,7 +90,7 @@ button{
 /* JUMBOTRON */
 .jumbo{
     
-    padding: 20px;
+    padding: 60px 20px;
     text-align: center;
 }
 .card{
@@ -193,7 +193,7 @@ button{
 /* PLANS */
 .plans{
     color: white;
-    padding: 20px;
+    padding: 60px 20px;
     background-color: #9792E4;
     padding-bottom: 5rem;
 }
@@ -246,7 +246,7 @@ button{
 /* TESTIMONIAL */
 .testimonial{
     text-align: center;
-    padding: 20px;
+    padding: 60px 20px;
     
 }
 .testimonial-intro h3{
@@ -407,6 +407,28 @@ button{
     background-color: var(--violet);
     color: white;
     text-align: center;
+    padding: 60px 20px;
+}
+.getstarted h2{
+    font-size: 4rem;
+    color: orange;
+}
+.getstarted h4{
+    font-size: 2rem;
+    padding-top: 20px;
+}
+.getstarted p{
+    padding-bottom: 40px;
+}
+.getstarted-btn{
+    background-color: white;
+    padding: 10px 40px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.getstarted-btn a{
+    text-decoration: none;
+    color: var(--violet);
 }
 @media screen and (min-width: 768px) {
     .container-small{
@@ -422,14 +444,17 @@ button{
 }
 /* FOOTER */
 .footer{
+    padding: 20px;
     background-color: var(--footer-color);
     color: white;
     text-align: center;
 }
 .footer p{
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding: 0px 20px 40px;
 }
 .footer a{
     color: #9792E4;
+}
+.bottom-footer{
+    padding: 0 40px;
 }
