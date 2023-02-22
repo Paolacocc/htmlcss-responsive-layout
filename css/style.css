@@ -42,7 +42,7 @@ button{
     background-color: var(--primary-color);
     display: flex;
     justify-content: space-between;
-    padding: 0 10px;
+    padding: 0 20px;
     color: white;
 }
 .header .nav-bar{
@@ -51,6 +51,9 @@ button{
 .logo img{
     padding: 10px;
     vertical-align: middle;
+}
+.hamburger{
+    font-size: 2rem;
 }
 @media screen and (min-width: 992px) {
     .hamburger{
@@ -242,8 +245,13 @@ button{
 
 /* TESTIMONIAL */
 .testimonial{
+    text-align: center;
     padding: 20px;
     
+}
+.testimonial-intro h3{
+    font-size: 2rem;
+    color: var(--violet);
 }
 .testimonial-col{
     padding-bottom: 2rem;
@@ -252,7 +260,7 @@ button{
 
 }
 .testimonial-img{
-   
+   padding: 20px;
 }
 .testimonial-img img{
     width: 150px;
@@ -261,9 +269,10 @@ button{
     object-fit: cover;
 }
 .testimonial-card{
+    color: white;
     background-color: #9792E4;
-    border-radius: 10px;
-    padding: 1rem;
+    border-radius: 40px;
+    padding: 20px;
 }
 
 @media  screen and (min-width: 768px) {
@@ -275,21 +284,63 @@ button{
 /* BENEFITS */
 
 .benefits{
+    text-align: center;
+    color: white;
     padding: 20px;
     background-color: #9792E4;
 }
+.benefits-title{
+    font-size: 3rem;
+}
 .benefits-col{
-    border-radius: 10px;
+    text-align: left;
+    border-radius: 20px;
     margin-bottom: 2rem;
-    /* debug */
-    height: 200px;
+    padding: 40px;
     background-color: white;
 }
+.benefits h2{
+    padding: 20px 0 40px;
+}
+.benefits-card{
+    color: var(--violet);
+}
+.benefits-card h2{
+    font-size: 5rem;
+}
+.more-btn{
+    background-color: var(--violet);
+    padding: 10px 40px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.more-btn a{
+    text-decoration: none;
+    color: white;
+}
 
+@media screen and (min-width: 768px) {
+    .benefits-row{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .benefits-col{
+        width: calc(100% / 2 - 20px);
+
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .benefits-col{
+        width: calc(100% / 3 - 20px);
+
+    }
+}
 /* ABOUT US */
 
 .aboutus{
-    padding: 20px;
+    padding: 60px 20px;
 }
 
 .aboutus-img img{
@@ -298,19 +349,53 @@ button{
     border-radius: 50%;
     object-fit: cover;
 }
+.aboutus h2{
+    color: var(--violet);
+}
+.aboutus-col1,
+.aboutus-col2{
+    padding: 20px;
+}
+.aboutus-col2 h4{
+    color: var(--violet);
+    line-height: 2rem;
+    padding: 20px 0;
+    font-size: 1.2rem;
 
+}
+.aboutus-btn{
+    background-color: var(--violet);
+    padding: 10px;
+    border-radius: 20px;
+}
+.aboutus-btn a{
+    color: white;
+    text-decoration: none;
+}
+.aboutus-btn i{
+    padding-right: 10px;
+}
+.aboutus-img{
+    position: relative;
+}
+.img-quote{
+    position: absolute;
+    left: 120px;
+    font-size: 3rem;
+    color: var(--violet);
+}
 @media screen and (min-width: 768px) {
     .aboutus-row{
         display: flex;
     }
-    /* .aboutus-col1{
+    .aboutus-col1{
         padding: 1rem;
         width: 70%;
     }
-    .aboutus2{
+    .aboutus-col2{
         padding: 1rem;
         width: 30%;
-    } */
+    }
 }
 @media screen and (min-width: 992px) {
     .aboutus
